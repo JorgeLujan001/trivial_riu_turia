@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>triviaimagen</title>
+</head>
+<body style="margin: 0pt; padding: 0pt;">
+<script language="javaScript">
+var imagenpregunta=new Image();
+var yourImg;
+var solucionsrespostes=new Array;
+
+function alerta(){imagenpregunta.src="images/mover.png";
+ancho=imagenpregunta.width;
+alto=imagenpregunta.height;
+pepe=ancho/alto;
+ancho1="150px";alto1="100px";
+coloalto1="537px";
+coloancho1="890px";
+if(pepe>1.5){ancho1="150px";alto2=Math.floor(150*alto/ancho);alto1=alto2+"px";coloalto=232+Math.floor((100-alto2)/2);coloalto1=coloalto+"px";document.getElementById("divpreguntai").style.top =coloalto1;};
+if(pepe<1.5){alto1="100px";ancho2=Math.floor(100*ancho/alto);ancho1=ancho2+"px";coloancho=240+Math.floor((150-ancho2)/2);coloancho1=coloancho+"px";document.getElementById("divpreguntai").style.left =coloancho1;};
+alert("ancho="+ancho+" alto="+alto+" coloalto1="+coloalto1+" coloancho1="+coloancho1);
+yourImg = document.getElementById('ip');
+
+    yourImg.style.height = alto1;
+    yourImg.style.width = ancho1;
+
+}
+function extraer(){solucionsrespostes.length=0;solucionsrespostes[0]=document.forms.inici.limit.value;i=1;
+while(solucionsrespostes[0].indexOf(';')!=-1){solucionsrespostes[i]=solucionsrespostes[0].slice(0, solucionsrespostes[0].indexOf(';'));solucionsrespostes[0]=solucionsrespostes[0].slice(solucionsrespostes[0].indexOf(';')+1, solucionsrespostes[0].length);i++}
+for(i=0;i<solucionsrespostes.length;i++){
+alert(solucionsrespostes[i])}
+}
+</script>
+<div style="position: absolute; left: 238px; top: 230px;"><img   style="width: 154px; height: 104px;" alt="" src="fondo.jpg"></div>
+<div id="divpreguntai" style="position: absolute; left: 240px; top: 232px;"><img  onclick="alerta()" id="ip"  style="cursor: pointer; width: 125px; height: 133px;" alt="" src="images/mover.png"></div>
+<form action="t" name="inici">
+
+Respostes: <input size="10" name="limit"> <br>
+&nbsp;&nbsp;<input onclick="extraer()" name="inicia" value="Extrau" type="button">
+</span></form>
+</body></html>

@@ -1,0 +1,73 @@
+
+
+.menu0 {
+	padding: 5px;
+	width: 23%;
+	border: 1px solid #000;
+    background-color: lightblue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+.menu01 {
+	padding: 10px;
+	align-self: center;
+	width: 94%;
+	border: 1px solid #000;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+.menu02 {margin: 5px;
+cursor:pointer; cursor: hand;
+	padding: 10px;
+	align-self: center;
+		font-size: large;
+font-family: Arial;
+	width: 94%;
+	border: 2px solid #000;
+    background-color: SkyBlue; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+}
+.menu03 {cursor:pointer; cursor: hand;
+	padding: 10px;
+	align-self: center;
+font-family: Arial;
+font-size: xx-large;
+	width: 98%;
+	border: 1px solid #000;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+    color:white;
+}
+    
+.menu04 {
+	padding: 10px;
+	width: 70%;
+	font-size: large;
+	font-family: Arial;
+	font-size: x-large;
+	border: 0px solid #000;
+    background-color: White; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;
+ }
+    
+.menu05 {margin: 5px;
+cursor:pointer; cursor: hand;
+	padding: 10px;
+	font-family: Arial;
+	display: none;
+	font-size: large;
+      position:relative; right;
+	width: 80%;
+	border: 2px solid black;
+    background-color: #137bdc; 
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #999;    }
+    
+#presentacio { width: 420px; }
+
+#dinamica { color: #33b8ff; }
+
